@@ -1,0 +1,7 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('jxl.jar'))
+dependencies {
+    apply plugin: 'java'
+    implementation 'org.apache.servicemix.bundles:org.apache.servicemix.bundles.jexcelapi:2.4.2_4'
+    implementation files($//Users/pronoymukherjee/Downloads/commons-net-ftp-2.0.jar/$)
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Animation.AppCompat.Dialog"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="com.hyperxchange.pronoymukherjee.hyperxchangediagnosticnew.ManualTestActivities.SpeakerTest">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="203dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/speaker_test_message"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/userInputSpeaker"
+        android:layout_width="200dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/speaker_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/speakerOkayButton"
+        android:layout_width="177dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rectangle_rounded_shape"
+        android:text="@string/okay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInputSpeaker" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/speakerReplayButton"
+        android:layout_width="177dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangle_rounded_shape"
+        android:text="@string/replay_audio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speakerOkayButton"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.hyperxchange.pronoymukherjee.hyperxchangediagnosticnew.Activities.ManualTestScreen">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/failedTestManual"
+        android:layout_width="100dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_failed_bucket"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/successTestManual"
+        android:layout_width="100dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_sucess_bucket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/currentManualTest"
+        android:layout_width="158dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_timer"
+        app:layout_constraintBottom_toTopOf="@+id/manualTestGrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701"
+        tools:src="@drawable/ic_touch_screen" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/exitAppButtonManual"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridView
+        android:id="@+id/manualTestGrid"
+        android:layout_width="340dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:columnWidth="100dp"
+        android:numColumns="auto_fit"
+        app:layout_constraintBottom_toTopOf="@+id/exitAppButtonManual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

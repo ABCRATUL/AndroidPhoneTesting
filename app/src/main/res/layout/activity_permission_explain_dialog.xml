@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    tools:context="com.hyperxchange.pronoymukherjee.hyperxchangediagnosticnew.Activities.PermissionExplainDialog">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/permissionDialogTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/ops_we_need_all_the_permissions_to_diagnosis_the_device"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/permissionDialogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangle_rounded_shape"
+        android:text="@string/okay"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/permissionDialogTextView"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/permissionDialogButtonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangle_rounded_shape"
+        android:text="@string/exit_app"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/permissionDialogButton"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/permissionDialogTextView"
+        app:layout_constraintVertical_bias="0.4" />
+</android.support.constraint.ConstraintLayout>

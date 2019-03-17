@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.hyperxchange.pronoymukherjee.hyperxchangediagnosticnew.Activities.TestStatusActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/testStatusIcon"
+        android:layout_width="231dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_test_complete" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/failedNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/failedTestSet"
+        app:layout_constraintEnd_toStartOf="@+id/passedNumber"
+        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="2" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/passedNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/successTestSet"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="10" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/failedTestSet"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testStatusIcon"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/successTestSet"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testStatusIcon"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/passed"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/successTestSet" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/failed"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatTextView5"
+        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/failedTestSet" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/next"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

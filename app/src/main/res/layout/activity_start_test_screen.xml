@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.hyperxchange.pronoymukherjee.hyperxchangediagnosticnew.Activities.StartTestScreen">
+
+    <com.github.anastr.speedviewlib.SpeedView
+        android:id="@+id/ramUsage"
+        android:layout_width="144dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sv_unit="%"
+        app:sv_unitUnderSpeedText="false" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/ramUsageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="@string/ram_usage"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ramUsage" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/batteryPercentageShow"
+        android:layout_width="130dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_battery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toEndOf="@+id/ramUsage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/batteryPercentageShowValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toEndOf="@+id/ramUsageText"
+        app:layout_constraintTop_toBottomOf="@+id/batteryPercentageShow"
+        tools:text="92%" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/marketPlaceButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rectangle_rounded_shape"
+        android:text="@string/go_to_hx_marketplace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ramUsage" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/modelNameShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="Model: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marketPlaceButton"
+        tools:ignore="HardcodedText" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/modelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/modelNameShow"
+        app:layout_constraintTop_toBottomOf="@+id/marketPlaceButton"
+        tools:text="iPhone 7plus" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imeiNumberShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/imei_number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modelNameShow" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imeiNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toEndOf="@+id/imeiNumberShow"
+        app:layout_constraintTop_toBottomOf="@+id/modelName"
+        tools:text="2345657898" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/startTestButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rectangle_rounded_shape"
+        android:text="@string/start_testing_the_device"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imeiNumber" />
+</android.support.constraint.ConstraintLayout>

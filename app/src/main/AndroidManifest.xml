@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hyperxchange.pronoymukherjee.hyperxchangediagnosticnew">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.TestScoreScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash" />
+        <activity
+            android:name=".Activities.AutoTestScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash" />
+        <activity
+            android:name=".Activities.TestStatusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash" />
+        <activity
+            android:name=".Activities.TestStatusDialogActivity"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".Activities.StartTestScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash" />
+        <activity
+            android:name=".Activities.PermissionExplainDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".Activities.ManualTestScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash" />
+        <activity
+            android:name=".ManualTestActivities.TouchScreenTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManualTestActivities.SpeakerTest"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.VolumeButtonDownTest"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.VolumeButtonUpTest"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.ProximityTestActivity"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.CameraRearTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash" />
+        <activity
+            android:name=".ManualTestActivities.CameraFrontTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash" />
+        <activity
+            android:name=".ManualTestActivities.BackButtonTestActivity"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.ScreenBrightnessTest"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.MicroPhoneTestActivity"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.RGBTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash" />
+        <activity
+            android:name=".ManualTestActivities.HomeButtonTestActivity"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.VibrationTestActivity"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.ChargerTestActivity"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.PowerButtonTestActivity"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ManualTestActivities.HeadPhoneTestActivity"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".Activities.ManualTestStatusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash" />
+        <activity
+            android:name=".ManualTestActivities.FingerprintTestActivity"
+            android:theme="@style/dialog" />
+    </application>
+
+</manifest>
